@@ -60,7 +60,7 @@ def get_extensions():
     return ext_modulescd
 
 setup(
-    name="MultiScaleDeformableAttention",
+    name="DeformableAttention",
     version="1.0",
     author="Weijie Su",
     url="https://github.com/fundamentalvision/Deformable-DETR",
@@ -70,5 +70,3 @@ setup(
     # cmdclass={"build_ext": torch.utils.cpp_extension.BuildExtension},
 )
 
-if __name__ == '__main__':
-    setup
