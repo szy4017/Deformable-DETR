@@ -321,6 +321,12 @@ def main(args):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser('Deformable DETR training and evaluation script', parents=[get_args_parser()])
     args = parser.parse_args()
+    # training setting
+    args.dataset_file = 'intruscapes'
+    # args.coco_path = '/home/szy/data/intruscapes' # for old server
+    args.coco_path = '/data/szy4017/data/intruscapes'  # for new server
+    args.output_dir = './results_pretrain_state_finetune'
     if args.output_dir:
         Path(args.output_dir).mkdir(parents=True, exist_ok=True)
+
     main(args)
