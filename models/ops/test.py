@@ -80,7 +80,7 @@ def check_gradient_numerical(channels=4, grad_value=True, grad_sampling_loc=True
 
 if __name__ == '__main__':
     import os
-    os.environ["CUDA_VISIBLE_DEVICES"] = '4'
+    os.environ["CUDA_VISIBLE_DEVICES"] = '0'
     check_forward_equal_with_pytorch_double()
     check_forward_equal_with_pytorch_float()
 
